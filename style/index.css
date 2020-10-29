@@ -1,1 +1,109 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box;
+    max-width:100%;
+    border:1px solid grey; 
+}
+/*General Styles!*/
+html{
+    font-size:62.5%;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+h1, h2{
+    font-family:'Grenze Gotisch', cursive;
+}
+
+body{
+    font-family:'Patrick Hand', cursive;
+    font-size: 3.5rem;
+    height: 1.5;
+    color: #4f4f4f;
+}
+
+
+section{
+    padding: 4% 0;
+    width:90%;
+    margin: 0 auto;
+}
+div{
+    width:50%;
+}
+/*Header Customized*/
+
+header{
+background-color:#afeeee ;
+padding: 1%;
+
+}
+/*nav section styling*/
+
+nav{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    padding: .02%;
+    font-weight: bolder;
+    color:#fff;
+    background-color:#00ff00;
+    border-radius: 10%;
+}
+
+/* the Main section*/
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
