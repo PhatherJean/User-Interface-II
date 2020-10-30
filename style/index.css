@@ -97,11 +97,13 @@ nav{
 
 nav a{
     text-decoration: none;
-    padding: .02%;
+    margin: 0 5%;
+    padding: 0 1%;
     font-weight: bolder;
     color:#191970;
     background-color:#00ff00;
     border-radius: 10%;
+    box-shadow: 0 9px #999;
 }
 
 .main a{
@@ -114,13 +116,6 @@ nav a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.button{
-    text-decoration: none;
-    text-align: center;
-    background-color:#00ff00;
-    color:#191970;
 }
 
 /*Gallery sect*/
@@ -152,7 +147,8 @@ nav a{
     text-decoration: none;
     text-align: center;
     background-color:#00ff00;
-    color: black;
+    color:#191970;
+    box-shadow: 0 9px #999;
 }
 .aboutMe p{
     margin: 2% auto;
@@ -167,6 +163,55 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width:100%;
     margin:0 auto ;
 }
+
+
+.websites{
+    display: flex;
+}
+
+.fa {
+    padding: 0 2rem;
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5% 2%;
+    box-shadow: 0 9px #999;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+.fa-yahoo {
+    background: #430297;
+    color: white;
+  }
+
+  .fa-snapchat-ghost  {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github{
+      background: #4f4f4f;
+  }
+
+ button, nav .nav a, .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
