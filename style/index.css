@@ -43,7 +43,7 @@ table {
 *{
     box-sizing:border-box;
     max-width:100%;
-    border:1px solid grey; 
+    /* border:1px solid grey; */
 }
 /*General Styles!*/
 html{
@@ -60,28 +60,32 @@ h2{
 
 h1, h2{
     font-family:'Grenze Gotisch', cursive;
+    padding: 0 5%;
+    margin: 2% auto;
+    
 }
 
 body{
     font-family:'Patrick Hand', cursive;
     font-size: 3.5rem;
-    height: 1.5;
+    height: 2;
     color: #4f4f4f;
+    background-color: #f5fffa;
 }
 
 
 section{
     padding: 4% 0;
-    width:90%;
-    margin: 0 auto;
+    
 }
 div{
-    width:50%;
+    width:40%;
+    
 }
 /*Header Customized*/
 
 header{
-background-color:#afeeee ;
+background-color:#00ffff ;
 padding: 1%;
 
 }
@@ -95,15 +99,74 @@ nav a{
     text-decoration: none;
     padding: .02%;
     font-weight: bolder;
-    color:#fff;
+    color:#191970;
     background-color:#00ff00;
     border-radius: 10%;
 }
 
+.main a{
+    text-align: center;
+    margin: 0 30%;
+}
 /* the Main section*/
 
 .aboutMe{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.button{
+    text-decoration: none;
+    text-align: center;
+    background-color:#00ff00;
+    color:#191970;
+}
+
+/*Gallery sect*/
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.play{
+    height: 40vh;
+    background-image: url(/pict/PS\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.aboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button{
+    
+    text-decoration: none;
+    text-align: center;
+    background-color:#00ff00;
+    color: black;
+}
+.aboutMe p{
+    margin: 2% auto;
+    text-align: center;
+}
+
+
+/*Footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:0 auto ;
 }
