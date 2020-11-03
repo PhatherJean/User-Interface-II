@@ -1,4 +1,3 @@
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -11,18 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+time, mark, audio,
 body {
 	line-height: 1;
 }
@@ -289,3 +277,484 @@ footer p{
         
     }
 /*-------------home page end here------------------*/
+/*--------------mobile and tablet------------------*/
+
+@media(max-width: 800px) {
+    h1{
+        width: 100%;
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h1, h2{
+        margin: 3% auto;
+    }
+    body{
+        font-size: 3rem;
+        height: 2;
+    }
+    section{
+        width: 100%;
+    }
+    div{
+        width:100%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+    /*Header Customized*/
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: baseline;
+        /*background-color:#00ffff ;*/
+        padding: 1%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*nav section styling*/
+    
+   .nav nav a{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width:40%;
+        padding: 0 2%;
+        margin: .5% auto;
+        border-radius: 10%;
+        background-color: cornflowerblue;
+    }
+    .nav nav{
+        flex-direction: column;
+    }
+    
+    .main a{
+        text-align: center;
+        margin: 2% 1%;
+    }
+    
+    .aboutMe a{
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* the Main section*/
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .aboutMe p{
+        padding:1%;
+        margin: 1% auto;
+        width: 100%;
+    }
+    /*Gallery sect*/
+    
+    .gallery{
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        width:100%;
+    }
+    
+    .gallery div {
+        width: 50%;
+    }
+    
+    .gallery p{
+        text-align: center;
+        padding: 5%;
+        text-shadow: #666 3px 3px;
+    }
+    
+    .aboutMe .main-img{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    .gallery img{
+        width: 100%;
+        height: 33vh;
+    }
+    
+    
+    /*Footer*/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding:5%;
+        margin:10% auto ;
+        background-color: cornflowerblue;
+    }
+    
+    footer p{
+        padding: 1%;
+    }
+    
+    /*--------Social media links--------------*/
+    .websites{
+        display: none;
+    }
+}
+/*--------------------500 width max-------------*/
+
+@media(max-width: 500px){
+    *{
+        box-sizing:border-box;
+        max-width:100%;
+    }
+    /*General Styles!*/
+    html{
+        font-size:62.5%;
+        width: 100%;
+    }
+    
+    h1{
+        font-size: 10rem;
+        text-align: center;
+    }
+    
+    h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    h1, h2{
+        font-family:'Grenze Gotisch', cursive;
+        margin: 4% auto;
+        color:#2f4f4f;
+    }
+    
+    body{
+        font-family:'Patrick Hand', cursive;
+        font-size: 3.5rem;
+        height: 2.5;
+        color: #2f4f4f;
+        background-color: #708090;
+    }
+    
+    .button{
+       
+        text-decoration: none;
+        text-align: center;
+        width: auto;
+        color:#00ffff;
+        box-shadow: 0 9px #2f4f4f;
+    }
+    
+    section{
+        width: 100%;
+        padding: 4% 0;
+        margin: 0 auto;   
+    }
+    div{
+        width:50%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+    /*Header Customized*/
+    
+    header{
+        display: flex;
+        justify-content:space-around;
+        align-items: baseline;
+        /*background-color:#00ffff ;*/
+        padding: 1%;
+        width: 95%;
+        margin: 0 auto;
+    }
+    /*nav section styling*/
+    
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: right;
+        width:95%;
+    }
+    
+    nav a{
+        text-decoration: none;
+        margin: 0 1%;
+        padding: 1% 1%;
+        font-weight: bold;
+        color:#00ffff;
+        border-radius: 50%;
+        box-shadow: 0 9px #2f4f4f;
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-direction: reverse;
+    }
+    
+    .main a{
+        text-align: center;
+        margin: 0 40%;
+        padding: 1%;
+    }
+    
+    .aboutMe a{
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* the Main section*/
+    
+    .aboutMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .aboutMe p{
+        padding:4%;
+        margin: 2% auto;
+        text-align: center;
+    }
+    
+    .me{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*Gallery sect*/
+    
+    .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin:0 auto;
+        width:100%;
+    }
+    
+    .gallery div{
+        width: 25%;
+    }
+    
+    .gallery p{
+        text-align: center;
+        padding: 5%;
+        text-shadow: #666 3px 3px;
+    }
+    
+    .main-img img{
+        
+        width: 100%;
+       /*background-image: url(/pict/pmz2.PNG);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; */
+    }
+    
+    /*.haitian{
+        background-image: url(/pict/festivities.jpeg);
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 95%;
+        background-size: cover;
+        background-attachment: fixed;
+    }*/
+    
+    .gallery img{
+        width: 100%;
+        margin: 0 auto;
+        height: 33vh;
+    }
+    
+    
+    /*Footer*/
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:95%;
+        margin:4% auto ;
+    }
+    
+    footer p{
+        padding: 2%;
+    }
+    
+    /*--------Social media links--------------*/
+    .websites{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .fa {
+        padding: 0 2rem;
+        font-size: 3rem;
+        width: 50%;
+        text-align: center;
+        text-decoration: none;
+        margin: 5% 2%;
+        box-shadow: 0 9px #999;
+      }
+      
+    .fa-yahoo {
+        background: #430297;
+        color: white;
+      }
+    
+      .fa-snapchat-ghost  {
+        background: #fffc00;
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    
+    .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+    
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+    
+      .fa-github{
+          background: #2f4f4f;
+      }
+    
+     button, nav .nav a, .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 1px #666;
+        color: #fff;
+        transform: translateY(4px);
+     }
+     /*---------animation functions-----------------*/
+    
+     .fa:hover {
+        opacity: 0.5;
+    }
+    
+    .nav a:hover, .button:hover{
+        text-transform: uppercase;
+        color: #000080;
+        background-color:#ff0000;
+       
+    } 
+    @keyframes rotate {
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+    /*-------------home page end here------------------*/
+    /*--------------mobile and tablet------------------*/
+    
+    @media(max-width: 500px) {
+        h1{
+            width: 100%;
+            font-size: 4.5rem;
+        }
+        h2{
+            font-size: 2.7rem;
+        }
+        div{
+            width:100%;
+            margin: 0 auto;
+            padding: 1%;
+        }
+        /*Header Customized*/
+        
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            align-items: baseline;
+            /*background-color:#00ffff ;*/
+            padding: 1%;
+            width: 100%;
+            margin: 0 auto;
+        }
+        /*nav section styling*/
+        
+       .nav nav a{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width:40%;
+            padding: 0 .5%;
+            margin: 1.5% auto;
+            border-radius: 10%;
+            background-color:#2f4f4f
+        }
+        .aboutMe a{
+            text-align: center;
+            margin: 0 auto;
+        }
+        /* the Main section*/
+        
+        .aboutMe p{
+            padding:1%;
+            margin: 0 auto;
+        }
+        /*Gallery sect*/
+        
+        .gallery{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+        }
+        
+        .gallery div {
+            width: 45%;
+        }
+        
+        .gallery p{
+            padding: 2%;
+        }
+        
+      
+    
+        }
+        .gallery img{
+            width: 100%;
+            height: 15vh;
+        }
+        
+        
+        /*Footer*/
+        
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            padding:2%;
+            margin:5% auto ;
+            background-color: cornflowerblue;
+        }
+        
+        footer p{
+            padding: 2%;
+        }
+
+        .button{
+            margin-bottom: 5%;
+            padding-bottom: 2%;
+        }
+        
+        /*--------Social media links--------------*/
+        .websites{
+            display: none;
+        }   
+}
