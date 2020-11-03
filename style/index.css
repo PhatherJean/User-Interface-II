@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -89,7 +90,7 @@ section{
     margin: 0 auto;   
 }
 div{
-    width:33%;
+    width:50%;
     margin: 0 auto;
     padding: 1%;
 }
@@ -131,6 +132,11 @@ nav a{
     margin: 0 40%;
     padding: 1%;
 }
+
+.aboutMe a{
+    text-align: center;
+    margin: 0 auto;
+}
 /* the Main section*/
 
 .aboutMe{
@@ -142,31 +148,40 @@ nav a{
 }
 
 .aboutMe p{
+    padding:4%;
     margin: 2% auto;
     text-align: center;
-    width: fit-content;
-    
+}
+
+.me{
+    display: flex;
+    flex-direction: column;
 }
 
 /*Gallery sect*/
 
 .gallery{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     flex-wrap: wrap;
     margin:0 auto;
     width:100%;
 }
 
+.gallery div{
+    width: 25%;
+}
+
 .gallery p{
     text-align: center;
     padding: 5%;
+    text-shadow: #666 3px 3px;
 }
 
-.main-img{
-    height: 60vh;
-    width: 95%;
+.main-img img{
+    
+    width: 100%;
    /*background-image: url(/pict/pmz2.PNG);
     background-position: center;
     background-repeat: no-repeat;
@@ -183,12 +198,10 @@ nav a{
     background-attachment: fixed;
 }*/
 
-
-
 .gallery img{
     width: 100%;
     margin: 0 auto;
-    height: 40vh;
+    height: 33vh;
 }
 
 
@@ -276,4 +289,3 @@ footer p{
         
     }
 /*-------------home page end here------------------*/
-
