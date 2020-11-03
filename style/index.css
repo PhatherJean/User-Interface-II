@@ -175,11 +175,12 @@ nav a{
 .gallery p{
     text-align: center;
     padding: 5%;
+    text-shadow: #666 3px 3px;
 }
 
-.main-img{
-    height: 60vh;
-    width: 95%;
+.main-img img{
+    
+    width: 100%;
    /*background-image: url(/pict/pmz2.PNG);
     background-position: center;
     background-repeat: no-repeat;
